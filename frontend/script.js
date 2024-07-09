@@ -11,7 +11,7 @@ const chatInput = document.querySelector(".chat__input")
 const chatMessages = document.querySelector(".chat__messages")
 //-------END--------
 
-const colors = [
+ const colors = [
   "cadetblue",
   "darkgoldenrod",
   "cornflowerblue",
@@ -84,7 +84,7 @@ const handleLogin = (event) => {
   login.style.display = "none"
   chat.style.display = "flex"
   
-  websocket = new WebSocket("ws://localhost:8081")
+  websocket = new WebSocket("wss://bchat-k21c.onrender.com")
   websocket.onmessage = processMessage
 }
 
